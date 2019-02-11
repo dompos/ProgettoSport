@@ -9,7 +9,7 @@
 import UIKit
 
 class Lista_TableViewController: UITableViewController {
-    let lista: [String] = ["Pasquale"]
+    let lista: [String] = ["Pasquale", "Pasquale", "Pasquale", "Pasquale", "Pasquale",]
 
     override func viewDidLoad() {
         super.viewDidLoad()
