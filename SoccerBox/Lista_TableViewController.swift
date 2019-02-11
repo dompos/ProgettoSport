@@ -38,7 +38,6 @@ class Lista_TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listaCell", for: indexPath) as! Lista_TableViewCell
 
         // Configure the cell...
-        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = lista[indexPath.row]
 
         return cell
