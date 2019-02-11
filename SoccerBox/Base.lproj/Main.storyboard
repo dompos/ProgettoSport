@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cTa-NG-Jer">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting-->
+        <scene sceneID="sbC-uN-GZr">
+            <objects>
+                <viewController id="vFo-XI-dz7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atA-Xl-cwO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="HGb-9t-Ewf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="settingTabBar" id="b58-WM-qYV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOC-hs-M2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="862"/>
+        </scene>
+        <!--Eventi-->
+        <scene sceneID="edA-ME-YPH">
+            <objects>
+                <tableViewController id="7KJ-Dh-fJF" customClass="Lista_TableViewController" customModule="SoccerBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RJJ-XB-dml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="sectionIndexBackgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="listaCell" id="TaQ-HZ-khc" customClass="Lista_TableViewCell" customModule="SoccerBox" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TaQ-HZ-khc" id="5bR-0t-0ZL">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7KJ-Dh-fJF" id="iIg-Fc-yJp"/>
+                            <outlet property="delegate" destination="7KJ-Dh-fJF" id="WyW-Tj-P0J"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Eventi" image="listaTabBar" id="vbS-D0-7DV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUl-YV-2lN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-550"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoccerBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGQ-vq-u1G">
+                                <rect key="frame" x="0.0" y="112" width="414" height="322"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Mtf-3r-VHs"/>
+                                    <constraint firstAttribute="height" constant="322" id="zn0-RU-vg3"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="create_colore"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSk-ip-CMd">
+                                <rect key="frame" x="0.0" y="450" width="414" height="322"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="0Py-m3-FKa"/>
+                                    <constraint firstAttribute="height" constant="322" id="AWY-6m-shy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="join_colore"/>
+                                <state key="highlighted" backgroundImage="join_colore"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdG-ky-7Iw">
+                                <rect key="frame" x="20" y="44" width="179" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="GKd-lR-S5a"/>
+                                    <constraint firstAttribute="height" constant="43" id="PDm-Xm-4aT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="UdG-ky-7Iw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CVW-rZ-68z"/>
+                            <constraint firstItem="pGQ-vq-u1G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IFM-Cg-5sx"/>
+                            <constraint firstItem="QSk-ip-CMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JIx-vw-CYr"/>
+                            <constraint firstItem="UdG-ky-7Iw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QcM-Ko-BkK"/>
+                            <constraint firstItem="pGQ-vq-u1G" firstAttribute="top" secondItem="UdG-ky-7Iw" secondAttribute="bottom" constant="25" id="UsB-rj-JJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UdG-ky-7Iw" secondAttribute="trailing" constant="215" id="b8u-SN-zrX"/>
+                            <constraint firstItem="QSk-ip-CMd" firstAttribute="top" secondItem="pGQ-vq-u1G" secondAttribute="bottom" constant="16" id="boA-FF-Ttt"/>
+                            <constraint firstItem="QSk-ip-CMd" firstAttribute="top" secondItem="pGQ-vq-u1G" secondAttribute="bottom" constant="16" id="g3a-wx-NcR"/>
+                            <constraint firstItem="pGQ-vq-u1G" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mIR-al-QrT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QSk-ip-CMd" secondAttribute="bottom" constant="41" id="rYK-kS-eo2"/>
+                            <constraint firstItem="pGQ-vq-u1G" firstAttribute="top" secondItem="UdG-ky-7Iw" secondAttribute="bottom" constant="25" id="ttZ-ZC-IlQ"/>
+                            <constraint firstItem="QSk-ip-CMd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vKc-I4-sq2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeTabBar" id="mcU-2Z-ZR7">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="C6c-7y-mQ8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cTa-NG-Jer" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6LQ-ZT-0QQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.79918771980000003" green="1" blue="0.36843854190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fep-Pw-u70"/>
+                        <segue destination="vFo-XI-dz7" kind="relationship" relationship="viewControllers" id="i5W-Ed-tFM"/>
+                        <segue destination="7KJ-Dh-fJF" kind="relationship" relationship="viewControllers" id="DDd-6F-wCz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sh0-zz-mZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="create_colore" width="1242" height="966"/>
+        <image name="homeTabBar" width="46" height="46"/>
+        <image name="join_colore" width="1242" height="966"/>
+        <image name="listaTabBar" width="46" height="46"/>
+        <image name="settingTabBar" width="46" height="46"/>
+    </resources>
+</document>
