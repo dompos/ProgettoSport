@@ -13,7 +13,7 @@ class Lista_TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//asgdvajshdbasd
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
