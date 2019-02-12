@@ -102,11 +102,6 @@
                         <viewLayoutGuide key="safeArea" id="HGb-9t-Ewf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="settingTabBar" id="b58-WM-qYV"/>
-                    <connections>
-                        <outlet property="ImageVie" destination="ebT-sw-GQX" id="4ar-La-1yV"/>
-                        <outlet property="NameField" destination="tNj-Mk-cyM" id="xQj-3H-S5G"/>
-                        <outlet property="SurnameField" destination="GgB-vP-a0v" id="28J-87-dcv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOC-hs-M2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
