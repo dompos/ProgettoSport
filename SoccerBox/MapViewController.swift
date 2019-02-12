@@ -8,39 +8,61 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDelegate {
 
     @IBOutlet var Mappa: MKMapView!
+    //var posizioneUtente = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         navigationItem.title = "Place"
-        let posizioneIniziale = CLLocation(latitude: 40.9669329, longitude: 14.198512)
-        let raggio: CLLocationDistance = 1000
-        impostaRegione(posizione: posizioneIniziale, ampiezza: raggio)
-        
-        let marioFiore = CLLocationCoordinate2D(latitude: 40.9685493, longitude: 14.2001372)
-        aggiungiAnnotazione(titolo: "Campetto Mario Fiore", sottotitolo: "costo: 5$", coordinate: marioFiore)
-        
-    }
-    
-    
-    
-    func impostaRegione(posizione: CLLocation, ampiezza: CLLocationDistance) -> Void {
-        let regione = MKCoordinateRegion(center: posizione.coordinate, latitudinalMeters: ampiezza, longitudinalMeters: ampiezza)
+        Mappa.mapType = .hybrid
+        Mappa.showsUserLocation = true
+        Mappa.userLocation.title = "My location"
+        let coordinate = Mappa.userLocation.coordinate
+        let raggio = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+        let regione = MKCoordinateRegion(center: coordinate, span: raggio)
         Mappa.setRegion(regione, animated: true)
+        
+        //POSIZIONE UTENTE
+//        self.posizioneUtente.requestWhenInUseAuthorization()
+//
+//        if CLLocationManager.locationServicesEnabled() {
+//            posizioneUtente.delegate = self
+//            posizioneUtente.desiredAccuracy = kCLLocationAccuracyBest
+//            posizioneUtente.startUpdatingLocation()
+//        }
+//
+//        Mappa.delegate = self
+//        Mappa.mapType = .standard
+//        Mappa.isZoomEnabled = true
+//        Mappa.isScrollEnabled = true
+//
+//        if let coordinate = Mappa.userLocation.location?.coordinate {
+//            Mappa.setCenter(coordinate, animated: true)
+//        }
+        
     }
-    
-    func aggiungiAnnotazione(titolo: String, sottotitolo: String, coordinate: CLLocationCoordinate2D) -> Void {
-        let annotazione = MKPointAnnotation()
-        annotazione.title = titolo
-        annotazione.subtitle = sottotitolo
-        annotazione.coordinate = coordinate
-        Mappa.addAnnotation(annotazione)
-    }
+    //POSIZIONE UTENTE
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+//
+//        Mappa.mapType = MKMapType.standard
+//
+//        let raggio = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+//        let regione = MKCoordinateRegion(center: locValue, span: raggio)
+//        Mappa.setRegion(regione, animated: true)
+//
+////        let annotazione = MKPointAnnotation()
+////        annotazione.coordinate = locValue
+////        annotazione.title = "Javed Multani"
+////        annotazione.subtitle = "current location"
+////        Mappa.addAnnotation(annotazione)
+//
+//        //centerMap(locValue)
+//    }
     
     
 
