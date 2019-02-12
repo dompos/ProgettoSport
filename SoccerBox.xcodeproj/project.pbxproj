@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A29B1332212C62500E258DB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29B1322212C62500E258DB /* SettingViewController.swift */; };
 		90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C09220D9222009BE9BD /* AppDelegate.swift */; };
 		90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C0B220D9222009BE9BD /* ViewController.swift */; };
 		90E63C0F220D9222009BE9BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C0D220D9222009BE9BD /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A29B1322212C62500E258DB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		90E63C06220D9222009BE9BD /* SoccerBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E63C09220D9222009BE9BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90E63C0B220D9222009BE9BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */,
 				90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */,
 				90E63C0D220D9222009BE9BD /* Main.storyboard */,
+				3A29B1322212C62500E258DB /* SettingViewController.swift */,
 				90E63C12220D9223009BE9BD /* LaunchScreen.storyboard */,
 				90E63C15220D9223009BE9BD /* Info.plist */,
 				90E63C1B220D9B43009BE9BD /* Media.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A29B1332212C62500E258DB /* SettingViewController.swift in Sources */,
 				90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */,
 				90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */,
 				90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */,
