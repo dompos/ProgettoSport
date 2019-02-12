@@ -14,6 +14,7 @@
 		90E63C1C220D9B43009BE9BD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C1B220D9B43009BE9BD /* Media.xcassets */; };
 		90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */; };
 		90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */; };
+		DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD296DF2212C75F00DA6832 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		90E63C1B220D9B43009BE9BD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewController.swift; sourceTree = "<group>"; };
 		90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewCell.swift; sourceTree = "<group>"; };
+		DCD296DF2212C75F00DA6832 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */,
 				90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */,
 				90E63C0D220D9222009BE9BD /* Main.storyboard */,
+				DCD296DF2212C75F00DA6832 /* MapViewController.swift */,
 				90E63C12220D9223009BE9BD /* LaunchScreen.storyboard */,
 				90E63C15220D9223009BE9BD /* Info.plist */,
 				90E63C1B220D9B43009BE9BD /* Media.xcassets */,
@@ -144,6 +147,7 @@
 				90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */,
 				90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */,
 				90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */,
+				DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */,
 				90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
