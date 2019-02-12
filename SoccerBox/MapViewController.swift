@@ -17,14 +17,13 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        navigationItem.title = "Place"
         let posizioneIniziale = CLLocation(latitude: 40.9669329, longitude: 14.198512)
         let raggio: CLLocationDistance = 1000
         impostaRegione(posizione: posizioneIniziale, ampiezza: raggio)
         
         let marioFiore = CLLocationCoordinate2D(latitude: 40.9685493, longitude: 14.2001372)
         aggiungiAnnotazione(titolo: "Campetto Mario Fiore", sottotitolo: "costo: 5$", coordinate: marioFiore)
-        
         
     }
     
