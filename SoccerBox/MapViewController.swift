@@ -12,7 +12,7 @@ import MapKit
 class MapViewController: UIViewController {
 
     @IBOutlet var Mappa: MKMapView!
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +42,9 @@ class MapViewController: UIViewController {
         Mappa.addAnnotation(annotazione)
     }
     
-    
+    func registerMapAnnotationViews() {
+        Mappa.register(MKMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: NSStringFromClass(marioFiore.self))
+    }
 
     /*
     // MARK: - Navigation
