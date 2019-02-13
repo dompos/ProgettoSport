@@ -9,7 +9,12 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate, {
+    
+    
+
+    
+    
 
     @IBOutlet var Mappa: MKMapView!
     
@@ -40,11 +45,14 @@ class MapViewController: UIViewController {
         annotazione.title = titolo
         annotazione.subtitle = sottotitolo
         annotazione.coordinate = coordinate
+        
         Mappa.addAnnotation(annotazione)
     }
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        print(#function)
+    }
     
-
     /*
     // MARK: - Navigation
 
