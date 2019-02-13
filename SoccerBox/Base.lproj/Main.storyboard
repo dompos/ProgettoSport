@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Insert name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Q3-pO-lqW">
                                 <rect key="frame" x="-6" y="253" width="429" height="30"/>
@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSP-X2-AbD">
                                 <rect key="frame" x="20" y="209" width="52" height="21"/>
@@ -67,9 +67,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-fZ-ODM">
-                                <rect key="frame" x="11" y="342" width="54" height="46"/>
+                                <rect key="frame" x="15" y="342" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="monday"/>
+                                <state key="selected" image="monday"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-c2-gWr">
                                 <rect key="frame" x="66" y="342" width="54" height="46"/>
@@ -103,11 +104,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="HGb-9t-Ewf"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HNh-Jz-h0R" appends="YES" id="Ic9-h5-Unu"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="settingTabBar" id="b58-WM-qYV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOC-hs-M2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HNh-Jz-h0R">
+                    <connections>
+                        <action selector="tap:" destination="vFo-XI-dz7" id="gOj-MH-Cui"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="861.83035714285711"/>
         </scene>
@@ -336,7 +346,7 @@
                     <tabBarItem key="tabBarItem" title="Events" image="listaTabBar" id="vbS-D0-7DV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="6Nq-zv-JOW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="98"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.79918771980000003" green="1" blue="0.36843854190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -371,7 +381,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4LI-cT-QML">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="98"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.79918771980000003" green="1" blue="0.36843854190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="barTintColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

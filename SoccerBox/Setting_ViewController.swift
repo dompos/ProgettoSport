@@ -10,6 +10,9 @@ import UIKit
 
 class Setting_ViewController: UIViewController {
 
+    @IBAction func tap(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
