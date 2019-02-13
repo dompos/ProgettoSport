@@ -11,10 +11,10 @@
 		90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C09220D9222009BE9BD /* AppDelegate.swift */; };
 		90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C0B220D9222009BE9BD /* ViewController.swift */; };
 		90E63C0F220D9222009BE9BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C0D220D9222009BE9BD /* Main.storyboard */; };
-		90E63C14220D9223009BE9BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C12220D9223009BE9BD /* LaunchScreen.storyboard */; };
 		90E63C1C220D9B43009BE9BD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C1B220D9B43009BE9BD /* Media.xcassets */; };
 		90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */; };
 		90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */; };
+		90EA4A702212E18100097461 /* Launch Screen 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */; };
 		DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD296DF2212C75F00DA6832 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +24,11 @@
 		90E63C09220D9222009BE9BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90E63C0B220D9222009BE9BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90E63C0E220D9222009BE9BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90E63C13220D9223009BE9BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90E63C15220D9223009BE9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90E63C1B220D9B43009BE9BD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewController.swift; sourceTree = "<group>"; };
 		90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewCell.swift; sourceTree = "<group>"; };
+		90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen 2.storyboard"; sourceTree = "<group>"; };
 		DCD296DF2212C75F00DA6832 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,9 +69,9 @@
 				3A29B1352212DB9F00E258DB /* Setting_ViewController.swift */,
 				90E63C0D220D9222009BE9BD /* Main.storyboard */,
 				DCD296DF2212C75F00DA6832 /* MapViewController.swift */,
-				90E63C12220D9223009BE9BD /* LaunchScreen.storyboard */,
 				90E63C15220D9223009BE9BD /* Info.plist */,
 				90E63C1B220D9B43009BE9BD /* Media.xcassets */,
+				90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */,
 			);
 			path = SoccerBox;
 			sourceTree = "<group>";
@@ -134,8 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E63C14220D9223009BE9BD /* LaunchScreen.storyboard in Resources */,
 				90E63C1C220D9B43009BE9BD /* Media.xcassets in Resources */,
+				90EA4A702212E18100097461 /* Launch Screen 2.storyboard in Resources */,
 				90E63C0F220D9222009BE9BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,14 +165,6 @@
 				90E63C0E220D9222009BE9BD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		90E63C12220D9223009BE9BD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90E63C13220D9223009BE9BD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
