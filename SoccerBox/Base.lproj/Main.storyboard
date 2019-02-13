@@ -60,12 +60,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Wk-PLu">
-                                <rect key="frame" x="24" y="404" width="45" height="21"/>
+                                <rect key="frame" x="20" y="402" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxV-fZ-ODM">
+                                <rect key="frame" x="11" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="monday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-c2-gWr">
+                                <rect key="frame" x="66" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tuesday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wev-D2-lFY">
+                                <rect key="frame" x="119" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="wensday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRt-1b-Aaz">
+                                <rect key="frame" x="173" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tuesday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wu-By-zx6">
+                                <rect key="frame" x="227" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="friday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vME-TM-wAB">
+                                <rect key="frame" x="281" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="saturday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBI-0a-Bhh">
+                                <rect key="frame" x="335" y="342" width="54" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sunday"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="HGb-9t-Ewf"/>
@@ -294,11 +329,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
-        <!--Eventi-->
+        <!--Events-->
         <scene sceneID="e8c-A0-rbn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IdD-dS-U1T" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eventi" image="listaTabBar" id="vbS-D0-7DV"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="listaTabBar" id="vbS-D0-7DV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="6Nq-zv-JOW">
                         <rect key="frame" x="0.0" y="44" width="414" height="98"/>
@@ -362,11 +397,17 @@
     <resources>
         <image name="create_colore" width="1242" height="966"/>
         <image name="fieldlow" width="298.07998657226562" height="414.72000122070312"/>
+        <image name="friday" width="46.799999237060547" height="46.799999237060547"/>
         <image name="homeTabBar" width="46" height="46"/>
         <image name="iconhead2" width="46.799999237060547" height="46.799999237060547"/>
         <image name="join_colore" width="1242" height="966"/>
         <image name="listaTabBar" width="46" height="46"/>
+        <image name="monday" width="46.799999237060547" height="46.799999237060547"/>
         <image name="photo-1492633030546-6236e2bf198e" width="1623" height="1623"/>
+        <image name="saturday" width="46.799999237060547" height="46.799999237060547"/>
         <image name="settingTabBar" width="46" height="46"/>
+        <image name="sunday" width="46.799999237060547" height="46.799999237060547"/>
+        <image name="tuesday" width="46.799999237060547" height="46.799999237060547"/>
+        <image name="wensday" width="46.799999237060547" height="46.799999237060547"/>
     </resources>
 </document>
