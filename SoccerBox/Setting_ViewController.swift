@@ -9,7 +9,6 @@
 import UIKit
 
 class Setting_ViewController: UIViewController {
-
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
