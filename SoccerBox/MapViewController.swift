@@ -22,8 +22,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate,MKMapViewDe
         Mappa.showsUserLocation = true
         Mappa.userLocation.title = "My location"
         let coordinate = Mappa.userLocation.coordinate
-        let raggio = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
-        let regione = MKCoordinateRegion(center: coordinate, span: raggio)
+        let raggio = 2000
+        let regione = MKCoordinateRegion(center: coordinate, latitudinalMeters: CLLocationDistance(raggio), longitudinalMeters: CLLocationDistance(raggio))
         Mappa.setRegion(regione, animated: true)
         
         //POSIZIONE UTENTE
