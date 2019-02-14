@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate, {
+class MapViewController: UIViewController, MKMapViewDelegate {
     
     
 
@@ -30,9 +30,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, {
         let marioFiore = CLLocationCoordinate2D(latitude: 40.9685493, longitude: 14.2001372)
         aggiungiAnnotazione(titolo: "Campetto Mario Fiore", sottotitolo: "costo: 5$", coordinate: marioFiore)
         
+       
+        
+        Mappa.delegate = self
     }
-    
-    
     
     func impostaRegione(posizione: CLLocation, ampiezza: CLLocationDistance) -> Void {
         let regione = MKCoordinateRegion(center: posizione.coordinate, latitudinalMeters: ampiezza, longitudinalMeters: ampiezza)
@@ -46,20 +47,12 @@ class MapViewController: UIViewController, MKMapViewDelegate, {
         annotazione.coordinate = coordinate
         
         Mappa.addAnnotation(annotazione)
+        
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        print(#function)
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+                performSegue(withIdentifier: "segue", sender: nil)
+                Mappa.selectedAnnotations.removeAll()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
