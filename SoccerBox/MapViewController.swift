@@ -24,11 +24,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view.
         navigationItem.title = "Place"
         let posizioneIniziale = CLLocation(latitude: 40.9669329, longitude: 14.198512)
-        let raggio: CLLocationDistance = 1000
+        let raggio: CLLocationDistance = 1500
         impostaRegione(posizione: posizioneIniziale, ampiezza: raggio)
         
         let marioFiore = CLLocationCoordinate2D(latitude: 40.9685493, longitude: 14.2001372)
         aggiungiAnnotazione(titolo: "Campetto Mario Fiore", sottotitolo: "costo: 5$", coordinate: marioFiore)
+        
+        let pts = CLLocationCoordinate2D(latitude: 40.9686493, longitude: 14.2041372)
+        aggiungiAnnotazione(titolo: "Pts", sottotitolo: "costo: 4$", coordinate: pts)
         
        
         
@@ -54,5 +57,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 performSegue(withIdentifier: "segue", sender: nil)
                 Mappa.selectedAnnotations.removeAll()
     }
+    
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//        performSegue(withIdentifier: "segue2", sender: nil)
+//        Mappa.selectedAnnotations.removeAll()
+//    }
     
 }
