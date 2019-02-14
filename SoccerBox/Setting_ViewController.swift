@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class Setting_ViewController: UIViewController{
     
     @IBAction func sunday(_ sender: UIButton) {
