@@ -59,15 +59,8 @@
                                 <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Wk-PLu">
-                                <rect key="frame" x="75" y="395" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K80-ds-VEC">
-                                <rect key="frame" x="234" y="396" width="25" height="21"/>
+                                <rect key="frame" x="195" y="548" width="25" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -145,16 +138,31 @@
                                     <action selector="friday:" destination="vFo-XI-dz7" eventType="touchUpInside" id="TOa-vy-iHk"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1G-65-OxY">
-                                <rect key="frame" x="0.0" y="432" width="414" height="83"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="jE9-x8-qE8">
+                                <rect key="frame" x="0.0" y="460" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </pickerView>
+                                <date key="date" timeIntervalSinceReferenceDate="571825447.39549398">
+                                    <!--2019-02-14 08:24:07 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="it"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="yqK-X1-kB0">
+                                <rect key="frame" x="0.0" y="593" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <date key="date" timeIntervalSinceReferenceDate="571825470.29514503">
+                                    <!--2019-02-14 08:24:30 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="it"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJB-Wk-PLu">
+                                <rect key="frame" x="184" y="419" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12747858500000001" green="0.12747858500000001" blue="0.12747858500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
@@ -165,7 +173,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="settingTabBar" id="b58-WM-qYV"/>
                     <connections>
-                        <outlet property="pkfrom" destination="T1G-65-OxY" id="t4n-OP-b4H"/>
+                        <outlet property="date_1" destination="jE9-x8-qE8" id="vqy-lH-riQ"/>
+                        <outlet property="date_2" destination="yqK-X1-kB0" id="01d-tX-6hB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOC-hs-M2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
