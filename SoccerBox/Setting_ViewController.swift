@@ -9,7 +9,10 @@
 import UIKit
 
 class Setting_ViewController: UIViewController {
-
+    @IBOutlet var Name: UITextField!
+    @IBOutlet var Username: UITextField!
+    @IBOutlet var Image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
