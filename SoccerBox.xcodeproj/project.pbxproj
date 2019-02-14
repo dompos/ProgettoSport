@@ -18,6 +18,9 @@
 		90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */; };
 		90EA4A702212E18100097461 /* Launch Screen 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */; };
 		DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD296DF2212C75F00DA6832 /* MapViewController.swift */; };
+
+		DCFE53B72215A03A00027F95 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewCell.swift; sourceTree = "<group>"; };
 		90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen 2.storyboard"; sourceTree = "<group>"; };
 		DCD296DF2212C75F00DA6832 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+
+		DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 				3A29B1352212DB9F00E258DB /* Setting_ViewController.swift */,
 				9071A4CD22140DA200448AEA /* Create_ViewController.swift */,
 				90E63C0D220D9222009BE9BD /* Main.storyboard */,
+				DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */,
 				DCD296DF2212C75F00DA6832 /* MapViewController.swift */,
 				90E63C15220D9223009BE9BD /* Info.plist */,
 				90E63C1B220D9B43009BE9BD /* Media.xcassets */,
@@ -167,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFE53B72215A03A00027F95 /* CreateMatchViewController.swift in Sources */,
 				90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */,
 				3A29B1362212DB9F00E258DB /* Setting_ViewController.swift in Sources */,
 				90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */,
