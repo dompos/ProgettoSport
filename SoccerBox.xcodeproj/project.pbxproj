@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A29B1362212DB9F00E258DB /* Setting_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A29B1352212DB9F00E258DB /* Setting_ViewController.swift */; };
+		9071A4CC2213337100448AEA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9071A4CB2213337100448AEA /* MapKit.framework */; };
+		9071A4CE22140DA200448AEA /* Create_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071A4CD22140DA200448AEA /* Create_ViewController.swift */; };
 		90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C09220D9222009BE9BD /* AppDelegate.swift */; };
 		90E63C0C220D9222009BE9BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C0B220D9222009BE9BD /* ViewController.swift */; };
 		90E63C0F220D9222009BE9BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E63C0D220D9222009BE9BD /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		3A29B1352212DB9F00E258DB /* Setting_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting_ViewController.swift; sourceTree = "<group>"; };
+		9071A4CB2213337100448AEA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9071A4CD22140DA200448AEA /* Create_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create_ViewController.swift; sourceTree = "<group>"; };
 		90E63C06220D9222009BE9BD /* SoccerBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E63C09220D9222009BE9BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90E63C0B220D9222009BE9BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9071A4CC2213337100448AEA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9071A4CA2213337100448AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9071A4CB2213337100448AEA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90E63BFD220D9222009BE9BD = {
 			isa = PBXGroup;
 			children = (
 				90E63C08220D9222009BE9BD /* SoccerBox */,
 				90E63C07220D9222009BE9BD /* Products */,
+				9071A4CA2213337100448AEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +83,7 @@
 				90E63C1D2211B6EF009BE9BD /* Lista_TableViewController.swift */,
 				90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */,
 				3A29B1352212DB9F00E258DB /* Setting_ViewController.swift */,
+				9071A4CD22140DA200448AEA /* Create_ViewController.swift */,
 				90E63C0D220D9222009BE9BD /* Main.storyboard */,
 				DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */,
 				DCD296DF2212C75F00DA6832 /* MapViewController.swift */,
@@ -111,6 +126,11 @@
 				TargetAttributes = {
 					90E63C05220D9222009BE9BD = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -156,6 +176,7 @@
 				90E63C1E2211B6EF009BE9BD /* Lista_TableViewController.swift in Sources */,
 				90E63C0A220D9222009BE9BD /* AppDelegate.swift in Sources */,
 				DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */,
+				9071A4CE22140DA200448AEA /* Create_ViewController.swift in Sources */,
 				90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
