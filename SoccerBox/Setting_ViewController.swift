@@ -48,8 +48,8 @@ class Setting_ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        date_1.setValue(UIColor.white, forKey: "textColor")
-        date_2.setValue(UIColor.white, forKey: "textColor")
+//        date_1.setValue(UIColor.white, forKey: "textColor")
+//        date_2.setValue(UIColor.white, forKey: "textColor")
     }
     
     

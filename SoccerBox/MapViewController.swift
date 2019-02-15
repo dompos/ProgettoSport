@@ -48,13 +48,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-                performSegue(withIdentifier: "segue", sender: nil)
-                Mappa.selectedAnnotations.removeAll()
+        performSegue(withIdentifier: view.annotation!.title!!, sender: nil)
+        Mappa.selectedAnnotations.removeAll()
     }
     
-//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-//        performSegue(withIdentifier: "segue2", sender: nil)
-//        Mappa.selectedAnnotations.removeAll()
-//    }
+
+
     
 }
