@@ -42,9 +42,13 @@ class Setting_ViewController: UIViewController, UIImagePickerControllerDelegate,
         view.endEditing(true)
     }
     
-    @IBOutlet var date_1: UIDatePicker!
+    
+    @IBOutlet var descrizione: UITextField!
+    @IBOutlet var name: UITextField!
     @IBOutlet var date_2: UIDatePicker!
+    @IBOutlet var date_1: UIDatePicker!
     @IBOutlet var personalImage: UIImageView!
+    
     @IBAction func scatta(_ sender: UIButton) {
         scatta()
     }
@@ -58,8 +62,6 @@ class Setting_ViewController: UIViewController, UIImagePickerControllerDelegate,
         defaults.setValue(imageString, forKey: "UserImage")
     }
     
-    @IBOutlet var descrizione: UITextField!
-    @IBOutlet var name: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
