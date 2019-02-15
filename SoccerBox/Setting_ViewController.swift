@@ -11,40 +11,40 @@ import UIKit
 
 class Setting_ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
+
     @IBAction func sunday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func saturday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func friday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func thursday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func wednesday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func tuesday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
-    
     @IBAction func monday(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
+    
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
-    @IBOutlet var date_1: UIDatePicker!
+    
+    @IBOutlet var descrizione: UITextField!
+    @IBOutlet var name: UITextField!
     @IBOutlet var date_2: UIDatePicker!
+    @IBOutlet var date_1: UIDatePicker!
     @IBOutlet var personalImage: UIImageView!
+    
     @IBAction func scatta(_ sender: UIButton) {
         scatta()
     }
@@ -58,8 +58,6 @@ class Setting_ViewController: UIViewController, UIImagePickerControllerDelegate,
         defaults.setValue(imageString, forKey: "UserImage")
     }
     
-    @IBOutlet var descrizione: UITextField!
-    @IBOutlet var name: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
