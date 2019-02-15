@@ -18,9 +18,7 @@
 		90E63C202211B772009BE9BD /* Lista_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */; };
 		90EA4A702212E18100097461 /* Launch Screen 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */; };
 		DCD296E02212C75F00DA6832 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD296DF2212C75F00DA6832 /* MapViewController.swift */; };
-
 		DCFE53B72215A03A00027F95 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +35,7 @@
 		90E63C1F2211B772009BE9BD /* Lista_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lista_TableViewCell.swift; sourceTree = "<group>"; };
 		90EA4A6F2212E18100097461 /* Launch Screen 2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen 2.storyboard"; sourceTree = "<group>"; };
 		DCD296DF2212C75F00DA6832 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-
 		DCFE53B62215A03A00027F95 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,7 +322,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = posillipo.Mec;
+				PRODUCT_BUNDLE_IDENTIFIER = "posillipo.Match-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = posillipo.Mec;
+				PRODUCT_BUNDLE_IDENTIFIER = "posillipo.Match-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
