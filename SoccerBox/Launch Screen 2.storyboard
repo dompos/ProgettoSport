@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchprovv" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-AI-Vtm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-AI-Vtm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchprovv" width="298.07998657226562" height="645.1199951171875"/>
+        <image name="launch" width="745.20001220703125" height="1612.800048828125"/>
     </resources>
 </document>

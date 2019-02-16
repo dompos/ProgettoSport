@@ -1,22 +1,28 @@
 //
-//  CreateMatchViewController.swift
+//  Join_ViewController.swift
 //  SoccerBox
 //
-//  Created by Antonio Di Maio on 14/02/2019.
+//  Created by Domenico Posillipo on 15/02/2019.
 //  Copyright © 2019 Domenico Posillipo. All rights reserved.
 //
 
 import UIKit
+var dett = false
+class Join_ViewController: UIViewController {
 
-class CreateMatchViewController: UIViewController {
-    
-    @IBAction func tap(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
+    @IBAction func det(_ sender: UIButton) {
+        if !dett {
+            dettagli.image = UIImage(named: "dettagliView")
+            dett = true
+        }else{
+            dettagli.image = UIImage(named: "")
+            dett = false
+        }
     }
-    
+    @IBOutlet var dettagli: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     
