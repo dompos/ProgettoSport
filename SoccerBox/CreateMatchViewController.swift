@@ -9,6 +9,13 @@
 import UIKit
 
 class CreateMatchViewController: UIViewController {
+    @IBOutlet var place: UITextField!
+    
+    @IBAction func create(_ sender: UIButton) {
+        let avviso = UIAlertController(title: "Match added to your list", message: "", preferredStyle: .actionSheet)
+        avviso.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        present(avviso, animated: true, completion: nil)
+    }
     
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
@@ -17,6 +24,7 @@ class CreateMatchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Create"
         // Do any additional setup after loading the view.
     }
     

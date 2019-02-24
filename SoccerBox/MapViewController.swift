@@ -21,10 +21,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         let raggio: CLLocationDistance = 1500
         impostaRegione(posizione: posizioneIniziale, ampiezza: raggio)
         let marioFiore = CLLocationCoordinate2D(latitude: 40.9685493, longitude: 14.2001372)
-        aggiungiAnnotazione(titolo: "Campetto Mario Fiore", sottotitolo: "costo: 5$", coordinate: marioFiore)
-        
-        let pts = CLLocationCoordinate2D(latitude: 40.9686493, longitude: 14.2041372)
-        aggiungiAnnotazione(titolo: "Pts", sottotitolo: "costo: 4$", coordinate: pts)
+        aggiungiAnnotazione(titolo: "Soccer field", sottotitolo: "cost: 5$", coordinate: marioFiore)
         
        
         

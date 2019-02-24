@@ -9,7 +9,7 @@
 import UIKit
 
 class Lista_TableViewController: UITableViewController {
-    let lista: [String] = ["Pasquale", "Pasquale", "Pasquale", "Pasquale", "Pasquale",]
+    let lista: [String] = ["Match test"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class Lista_TableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        navigationItem.rightBarButtonItem = editButtonItem
+        //navigationItem.rightBarButtonItem = editButtonItem
     }
 
     // MARK: - Table view data source

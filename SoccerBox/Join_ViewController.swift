@@ -9,7 +9,14 @@
 import UIKit
 var dett = false
 class Join_ViewController: UIViewController {
-
+    
+    @IBAction func join(_ sender: UIButton) {
+        let avviso = UIAlertController(title: "Match added to your list", message: "", preferredStyle: .actionSheet)
+        avviso.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+        present(avviso, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func det(_ sender: UIButton) {
         if !dett {
             dettagli.image = UIImage(named: "dettagliView")
