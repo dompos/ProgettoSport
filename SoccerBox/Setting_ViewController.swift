@@ -98,7 +98,7 @@ class Setting_ViewController: UIViewController, UIImagePickerControllerDelegate,
         date_1.date = formtter.date(from: "2019/02/15 00:00")!
         date_2.date = formtter.date(from: "2019/02/15 00:00")!
         
-        let avviso = UIAlertController(title: "Resetted", message: "", preferredStyle: .actionSheet)
+        let avviso = UIAlertController(title: "Resetted", message: "To save changes, tap on the save button", preferredStyle: .actionSheet)
         avviso.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
         present(avviso, animated: true, completion: nil)
     }
